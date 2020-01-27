@@ -200,6 +200,12 @@ footer {
   }
 
   ul {
-    float:right;
+    list-style-type: none;
+    padding-left:0;
+    font-size: 1.5em;
+    li {
+      display:inline-block;
+      padding-right: 10px;
+    }
   }
 }
