@@ -1,5 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Literata&display=swap');
 @import '_variables.css';
 @import '_syntax.css';
+@font-face {
+  font-family: 'GangsterGrotesk';
+  src: url('/fonts/GangsterGrotesk-Regular.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'GangsterGrotesk';
+  font-weight: bold;
+  src: url("/fonts/GangsterGrotesk-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'GangsterGrotesk';
+  font-weight:300;
+  src: url("/fonts/GangsterGrotesk-Light.otf") format("opentype");
+}
+
 
 * {
   margin: 0;
@@ -29,11 +47,9 @@ body {
   line-height: 1.8;
   min-height: 100vh;
   background:  $page-color;
-
-  @media (min-width: $narrow) {
-    font-size: 18px;
-  };
-}
+  background-color: #ffffff;
+  font-size: 18px;
+  }
 
 .container {
   margin-left: auto;
@@ -48,6 +64,10 @@ body {
   };
 }
 
+img {
+  width:100%;
+}
+
 
 h1, h2, h3 {
   color: $text-color;
@@ -55,18 +75,19 @@ h1, h2, h3 {
   margin-top: 2em;
   margin-bottom:0.2em;
   line-height: 1;
+  font-family: 'Literata', serif;
 }
 h1 {
-  font-size: 3em;
+  font-size: 2em;
   margin-top:0.4em;
   margin-bottom:0.2em;
   line-height: 1;
 
   @media (min-width: $mid) {
-    font-size: 5em;
+    font-size: 3em;
   };
   @media (min-width: $wide) {
-    font-size: 6em;
+    font-size: 4em;
   };
 }
 
@@ -108,7 +129,7 @@ a:focus {
 
 .nav {
   padding-top: 3em;
-
+  padding-left:0;
   li {
     display: inline;
   }
@@ -124,7 +145,7 @@ a:focus {
     padding-bottom: 2em;
     margin-left: 0;
     margin-right: 0.7em;
-    width: 9em;
+    width: 8em;
     text-align: left;
     color: mix($text-color, $accent-color, 80%);
     text-decoration: none;
@@ -148,6 +169,7 @@ code {
   font-size: 0.8em;
   background-color: mix($text-color,$accent-color, 80%);
   color: rgb(42, 65, 77);
+  color: #fff;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 6px;
