@@ -1,19 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Literata&display=swap');
 @import '_variables.css';
 @import '_syntax.css';
 @font-face {
-  font-family: 'GangsterGrotesk';
+  font-family: GangsterGrotesk;
   src: url('/fonts/GangsterGrotesk-Regular.otf') format("opentype");
 }
 
 @font-face {
-  font-family: 'GangsterGrotesk';
+  font-family: GangsterGrotesk;
   font-weight: bold;
   src: url("/fonts/GangsterGrotesk-Bold.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'GangsterGrotesk';
+  font-family: GangsterGrotesk;
   font-weight:300;
   src: url("/fonts/GangsterGrotesk-Light.otf") format("opentype");
 }
@@ -42,7 +41,9 @@ body {
   background-color: $page-color;
   color: mix($text-color, $page-color, 90%);
   font-family: sans-serif;
-  font-weight: 300;
+    font-family: GangsterGrotesk, serif;
+
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.8;
   min-height: 100vh;
@@ -66,16 +67,17 @@ body {
 
 img {
   width:100%;
+  margin: 1em 0;
 }
 
 
 h1, h2, h3 {
   color: $text-color;
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 2em;
   margin-bottom:0.2em;
   line-height: 1;
-  font-family: 'Literata', serif;
+  font-family: GangsterGrotesk, serif;
 }
 h1 {
   font-size: 2em;
