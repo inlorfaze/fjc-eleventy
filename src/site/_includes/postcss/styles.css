@@ -74,7 +74,7 @@ img {
 h1, h2, h3 {
   color: $text-color;
   font-weight: 700;
-  margin-top: 2em;
+  margin-top: 1.75em;
   margin-bottom:0.2em;
   line-height: 1;
   font-family: GangsterGrotesk, serif;
@@ -100,7 +100,7 @@ p {
 
 .subtitle {
   font-size: 1.2em;
-  margin-top: 1em;
+  margin-top: 0.75em;
   margin-bottom: 5em;
   color: mix($accent-color, $text-color, 80%)
 }
@@ -140,9 +140,9 @@ a:focus {
   a:link,
   a:visited {
     display: inline-block;
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-top-color: mix($text-color, $accent-color, 40%);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: mix($text-color, $accent-color, 40%);
     border-bottom-style: none;
     padding-top: 0.8em;
     padding-bottom: 2em;

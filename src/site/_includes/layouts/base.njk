@@ -4,7 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512"  href="/images/favicons/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/images/favicons/apple-touch-icon.png">
+    <meta name="theme-color" content="#ffffff">
     <title>{{ title }}</title>
+    <meta name="description" content="{%- if description -%}{{ description }}{%- else -%}Finley Chen's personal website. Read his blog or ask him questions about WordPress or JavaScript.{%- endif -%}"/>
   </head>
   <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
 
