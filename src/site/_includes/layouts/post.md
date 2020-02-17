@@ -10,8 +10,5 @@ templateEngineOverride: njk, md
 <main>
   {{ content | safe }}
   <div class="footnote">
-    <p>
-      Author section here
-    </p>
   </div>
 </main>
