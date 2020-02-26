@@ -10,16 +10,16 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
     <link rel="apple-touch-icon" href="/images/favicons/apple-touch-icon.png">
     <meta name="theme-color" content="#ffffff">
-    <title>{{ title }}</title>
+    <title>Finley Chen Web Development | {{ title }}</title>
     <meta name="description" content="{%- if description -%}{{ description }}{%- else -%}Finley Chen's personal website. Read his blog or ask him questions about WordPress or JavaScript.{%- endif -%}"/>
   </head>
   <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
 
-    <div class="container">
       {% include "header.njk" %}
+      <main class="container">
       {{ content | safe }}
+      </main>
       {% include "footer.njk" %}
-    </div>
 
     {% set js %}
       {% include "js/core.js" %}

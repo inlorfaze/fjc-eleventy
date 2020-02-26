@@ -1,12 +1,10 @@
 ---
 layout: layouts/base.njk
-pageClass: posts
+pageClass: projects
 templateEngineOverride: njk, md
 ---
 
-<p class="date">
-  Posted on <time datetime="{{ date }}">{{ date | dateDisplay }}</time>
-</p>
+  <a class="url" href="{{ url }}">Visit Website</a>
 <article>
   {{ content | safe }}
   <div class="footnote">
