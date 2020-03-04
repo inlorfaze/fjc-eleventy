@@ -1,16 +1,20 @@
 ---
 title: Finley Chen Web Development
-description: I'm a front-end engineer and WordPress developer. Currently taking freelance projects.
+description: I'm a front-end engineer and WordPress developer. Currently available for hire freelance projects.
 layout: layouts/base.njk
 ---
 
 
-Hi, I'm Finley. I create custom WordPress websites that are fast, accessible, responsive, and SEO-optimized. I work with local businesses to improve their digital experiences. I have experience working as a front-end UI/UX developer at an [eCommerce startup](https://www.allpeople.co/) and my university (Cal Poly). 
+Hi, I'm Finley. Currently I'm freelancing as a WordPress developer. Previously, I was working as a WordPress WooCommerce developer at an [eCommerce startup](https://www.allpeople.co/) and a front-end developer at [Cal Poly](https://calpoly.edu). 
+I create custom WordPress websites that are fast, accessible, responsive, and SEO-optimized. 
 
-I can provide value for your business with:
+## What I Do
+I work with local businesses to improve their digital experiences. 
+Examples of services I provide:
 - Designing and developing robust WordPress websites
 - Hosting and maintaining your website long-term
 - Business digital strategy & marketing
+- Developing custom features and plugins
 
 Whether you are a recruiter, business owner, or just want to ask me a question, contact me at <a href="mailto:finleyjchen@gmail.com">finleyjchen@gmail.com</a>.
 

@@ -3,7 +3,6 @@ layout: layouts/base.njk
 pageClass: posts
 templateEngineOverride: njk, md
 ---
-<a href="/">&larr; Return to home</a>
 <article>
   {{ content | safe }}
   <div class="footnote">
@@ -14,4 +13,5 @@ templateEngineOverride: njk, md
       This content was written by Finley Chen.
     </p>
   </div>
+<a href="/">&larr; Return to home</a>
 </article>

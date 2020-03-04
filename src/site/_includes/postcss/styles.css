@@ -67,10 +67,16 @@ header {
   background-color: $text-color;
   color:$page-color;
   padding-bottom:1em;
+  font-family:GangsterGrotesk, sans-serif;
+  background-color: #082e54;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%239C92AC' fill-opacity='0.06' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   h1 {
     color:$page-color;
   }
-
+  a:link, a:visited {
+    color:rgba(255,255,255,0.8);
+    border:none;
+  }
   img {
     width: 160px;
   }
@@ -120,10 +126,7 @@ footer {
     bottom: 0;
     top: 0;
     width: 33.33%;  
-    a:link, a:visited {
-      color:rgba(255,255,255,0.8);
-      border:none;
-    }
+
     .container {
       max-width:300px;
     }
@@ -135,7 +138,7 @@ footer {
   }
   main.container {
     display: block;
-    padding: 6rem 6rem 0 1rem;
+    padding: 6rem 6rem 6rem 1rem;
     width: 100%;
     
   }
@@ -165,14 +168,23 @@ footer {
 }
 
 img {
-  width:100%;
+  max-width:100%;
   margin: 1em 0;
   border-radius: 4px;
   border: solid 2px #fff;
-  box-shadow: #000 0 0 4px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.17), 0 10px 10px rgba(0,0,0,0.15);
 }
 
-
+.button:link, .button:visited, .button {
+  background-color:$text-color;
+  color:rgba(255,255,255,0.8);
+  padding:0.5rem 1rem;
+  font-family: GangsterGrotesk, sans-serif;
+  &:hover {
+    background-color:mix($text-color, $accent-color, 80%);
+    text-decoration: none;
+  }
+}
 h1, h2, h3 {
   color: $text-color;
   font-weight: 700;
@@ -201,7 +213,7 @@ p {
 }
 
 .description {
-  font-size: 1em;
+  font-size: 1.1em;
   margin-top: 0.75em;
   color: rgba(255,255,255, 0.7 );
 }
@@ -318,7 +330,19 @@ pre {
   margin:0;
   article {
     a {
-      
+      display:flex;
+      justify-content: space-between;
+      padding:1em;
+      background-color:$text-color;
+      color:rgba(255,255,255,0.9);
+      &:hover {
+        text-decoration:none;
+        background-color: #082e54;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+      }
+      time {
+
+      }
       }
   }
 }
