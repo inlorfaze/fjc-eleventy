@@ -2,14 +2,32 @@
     <div class="container">
     <ul class="nav">
       <li>
-        <a href="/">home<small>who is Finley?</small></a>
+        <a href="/">home</a>
       </li>
       <li>
-        <a href="/about">about me<small>&amp; my experience</small></a>
+        <a href="/about">about me</a>
       </li>
-
+      <li>
+        <a href="/projects">projects</a>
+      </li>
     </ul>
+
     <h1>{{ title }}</h1>
     {%- if subtitle %}<p class="subtitle">{{ subtitle | safe }}</p>{% endif %}
+    {%- if description %}<p class="description">{{ description | safe }}</p>{% endif %}
+    {%- if date %}
+     
+      <p class="date">
+        Posted on <time datetime="{{ date }}">{{ date | dateDisplay }}</time>
+      </p>
+
+    {% endif %}
+    {%- if image %}
+      <img src="{{ image }}" alt="{{ alt }}" />
+    {% endif %}
+
+    {%- if url %}
+      <a class="url" href="{{ url }}">Visit Website</a>
+    {% endif %}
     </div>
 </header>

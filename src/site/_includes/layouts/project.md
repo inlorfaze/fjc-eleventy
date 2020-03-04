@@ -4,7 +4,6 @@ pageClass: projects
 templateEngineOverride: njk, md
 ---
 
-  <a class="url" href="{{ url }}">Visit Website</a>
 <article>
   {{ content | safe }}
   <div class="footnote">

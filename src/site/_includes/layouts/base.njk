@@ -14,7 +14,7 @@
     <meta name="description" content="{%- if description -%}{{ description }}{%- else -%}Finley Chen's personal website. Read his blog or ask him questions about WordPress or JavaScript.{%- endif -%}"/>
   </head>
   <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
-
+      <div id="wrapper">
       {% include "header.njk" %}
       <main class="container">
       {{ content | safe }}
@@ -25,6 +25,7 @@
       {% include "js/core.js" %}
       {% include "js/hello.js" %}
     {% endset %}
+    </div>
     <script>{{ js | jsmin | safe }}</script>
 
   </body>

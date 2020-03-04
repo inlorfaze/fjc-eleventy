@@ -33,19 +33,17 @@
 }
 
 html {
-  background-color: $accent-color;
+  /*background-color: $accent-color;*/
 }
 
 body {
-  text-align: center;
   background-color: $page-color;
   color: mix($text-color, $page-color, 90%);
-  font-family: sans-serif;
-    font-family: GangsterGrotesk, serif;
-    font-family: -apple-system, BlinkMacSystemFont,
-    "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans",
-    "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont,
+  "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans",
+  "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.8;
@@ -54,22 +52,129 @@ body {
   background-color: #ffffff;
   }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-  text-align: left;
-  @media (min-width: $mid) {
-    width: 600px;
-  };
-  @media (min-width: $wide) {
-    width: 700px;
-  };
+  .container {
+    max-width: 600px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:0 1em;
+      @media (min-width:$wide) {
+        padding:0;
+        }
+  }
+
+
+header {
+  background-color: $text-color;
+  color:$page-color;
+  padding-bottom:1em;
+  h1 {
+    color:$page-color;
+  }
+
+  img {
+    width: 160px;
+  }
+}
+footer {
+  padding-top: 4em;
+  padding-bottom: 6em;
+  font-size: 0.7em;
+  color: rgba(255,255,255,0.7);
+  color: $text-color;
+  a:link,
+  a:visited {
+    color: rgba(255,255,255, 0.9);
+    color: $text-color;
+    border-bottom: solid 1px;
+    border-bottom-color:mix($accent-color, #fff, 30%);
+  }
+  a:hover,
+  a:focus {
+    color: rgba(255,255,255,1);
+    color: $accent-color;
+    border-bottom: solid 1px $text-color;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left:0;
+    font-size: 1.5em;
+    li {
+      display:inline-block;
+      padding-right: 10px;
+      font-family:GangsterGrotesk, sans-serif;
+    }
+  }
+}
+#header-bg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10vw;
+}
+
+@media (min-width: $wide) {
+  header {
+    background-color: #082e54;
+    padding-left:1em;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    width: 33.33%;  
+    a:link, a:visited {
+      color:rgba(255,255,255,0.8);
+      border:none;
+    }
+    .container {
+      max-width:300px;
+    }
+  }  
+  #wrapper {
+    padding-left: calc(33.33% + 2em);
+    padding-right:1em;
+    position: relative;
+  }
+  main.container {
+    display: block;
+    padding: 6rem 6rem 0 1rem;
+    width: 100%;
+    
+  }
+
+  footer {
+    position:fixed;
+    left:0;
+    bottom: 0;
+    width:33.33%;
+    padding-left:1em;
+    .container {
+      max-width:300px;
+    }
+    color: rgba(255,255,255,0.7);
+    a:link,
+    a:visited {
+      color: rgba(255,255,255, 0.9);
+      border-bottom: solid 1px;
+      border-bottom-color:mix($accent-color, #fff, 30%);
+    }
+    a:hover,
+    a:focus {
+      color: rgba(255,255,255,1);
+      border-bottom: solid 1px $text-color;
+    }
+  }
+
+
+  
 }
 
 img {
   width:100%;
   margin: 1em 0;
+  border-radius: 4px;
+  border: solid 2px #fff;
+  box-shadow: #000 0 0 4px;
 }
 
 
@@ -88,10 +193,10 @@ h1 {
   line-height: 1;
 
   @media (min-width: $mid) {
-    font-size: 3em;
+    font-size: 2em;
   };
   @media (min-width: $wide) {
-    font-size: 4em;
+    font-size: 2.2em;
   };
 }
 
@@ -101,15 +206,14 @@ p {
 }
 
 .description {
-  font-size: 1.5em;
+  font-size: 1em;
   margin-top: 0.75em;
-  margin-bottom: 5em;
+  color: rgba(255,255,255, 0.7 );
 }
 
 .subtitle {
   font-size: 1.2em;
   margin-top: 0.75em;
-  margin-bottom: 5em;
   color: mix($accent-color, $text-color, 80%)
 }
 
@@ -144,7 +248,7 @@ a:focus {
   li {
     display: inline;
   }
-
+  font-family:GangsterGrotesk, sans-serif;
   a:link,
   a:visited {
     display: inline-block;
@@ -156,14 +260,13 @@ a:focus {
     padding-bottom: 2em;
     margin-left: 0;
     margin-right: 0.7em;
-    width: 8em;
     text-align: left;
-    color: mix($text-color, $accent-color, 80%);
+    color: mix($page-color, $accent-color, 80%);
     text-decoration: none;
   }
   a:hover,
   a:focus {
-      color: $text-color;
+      color: mix($page-color, $accent-color, 60%);
       border-top-color: $text-color;
       border-bottom-style: none;
   }
@@ -171,7 +274,7 @@ a:focus {
   small {
     display: block;
     font-size: 0.7em;
-    color: mix($text-color,$accent-color, 60%);
+    color: rgba(255,255,255, 0.9);
   }
 }
 
@@ -193,9 +296,6 @@ code {
   font-style: italic;
 }
 
-main {
-  margin-top: 4em;
-}
 
 pre {
   overflow: auto;
@@ -219,37 +319,7 @@ pre {
     margin-right:1em;
   }
 }
-footer {
-  margin-top: 6em;
-  padding-top: 4em;
-  padding-bottom: 6em;
-  border-top-width: 1px;
-  border-top-style: solid;
-  border-top-color: mix($text-color, $accent-color, 10%);
-  font-size: 0.7em;
-  color: mix($text-color, $accent-color, 50%);
 
-  a:link,
-  a:visited {
-    color: mix($text-color, $accent-color, 90%);
-    border-bottom: solid 1px mix($accent-color, $page-color, 70%);
-  }
-  a:hover,
-  a:focus {
-    color: $text-color;
-    border-bottom: solid 1px $text-color;
-  }
-
-  ul {
-    list-style-type: none;
-    padding-left:0;
-    font-size: 1.5em;
-    li {
-      display:inline-block;
-      padding-right: 10px;
-    }
-  }
-}
 
 .listing {
   padding:0;

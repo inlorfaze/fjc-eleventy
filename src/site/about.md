@@ -2,6 +2,8 @@
 title: About Me
 layout: layouts/base.njk
 subtitle: Striving for greatness
+image: /images/finley-chen-photo-min.jpg
+alt: Finley Chen portrait
 ---
 
 ## Introduction
