@@ -13,3 +13,10 @@
   to = "/.netlify/functions/:splat"
   status = 200
 
+[[redirects]]
+  from = "https://fjchen.net"
+    to = "https://finleychen.dev"
+    status = 301
+    force = true
+    query = {path = ":path"}
+    conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
