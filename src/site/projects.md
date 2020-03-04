@@ -10,7 +10,6 @@ layout: layouts/base.njk
     <h3>
     <a href="{{ page.url }}">{{ page.data.title }}</a>
     </h3>
-    <time datetime="{{ page.date }}">{{ page.date | dateDisplay("LLLL d, y") }}</time>
   {{ page.excerpt }}
   </article>
 {%- endfor -%}
