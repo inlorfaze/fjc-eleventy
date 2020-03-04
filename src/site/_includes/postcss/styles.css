@@ -85,14 +85,12 @@ footer {
   a:visited {
     color: rgba(255,255,255, 0.9);
     color: $text-color;
-    border-bottom: solid 1px;
-    border-bottom-color:mix($accent-color, #fff, 30%);
+
   }
   a:hover,
   a:focus {
     color: rgba(255,255,255,1);
     color: $accent-color;
-    border-bottom: solid 1px $text-color;
   }
 
   ul {
@@ -155,13 +153,10 @@ footer {
     a:link,
     a:visited {
       color: rgba(255,255,255, 0.9);
-      border-bottom: solid 1px;
-      border-bottom-color:mix($accent-color, #fff, 30%);
     }
     a:hover,
     a:focus {
       color: rgba(255,255,255,1);
-      border-bottom: solid 1px $text-color;
     }
   }
 
@@ -225,14 +220,13 @@ a:link,
 a:visited {
   color: $text-color;
   text-decoration: none;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: mix($text-color, $accent-color, 20%)
+  font-weight: 700;
 }
 a:hover,
 a:focus {
   color: $text-color;
   border-bottom-color: $text-color;
+  text-decoration: underline;
 }
 
 .nakedLink a:link,
@@ -252,9 +246,7 @@ a:focus {
   a:link,
   a:visited {
     display: inline-block;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-bottom-color: mix($text-color, $accent-color, 40%);
+
     border-bottom-style: none;
     padding-top: 0.8em;
     padding-bottom: 2em;
