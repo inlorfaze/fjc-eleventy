@@ -8,7 +8,7 @@ layout: layouts/base.njk
 Hi, I'm Finley. I make things on the web for small businesses. Previously, I was working as a WordPress WooCommerce developer at an [eCommerce startup](https://www.allpeople.co/) and a front-end developer at [Cal Poly](https://calpoly.edu). 
 I create custom WordPress websites that are fast, accessible, responsive, and SEO-optimized. 
 
-## What I Do
+## Services 
 I work with local businesses to improve their digital experiences. 
 Examples of services I provide:
 - Designing and developing robust WordPress websites
@@ -20,13 +20,13 @@ Whether you are a recruiter, business owner, or just want to ask me a question, 
 
 
 
-## Blog 
+## Posts 
 <section class="listing">
 {%- for page in collections.post -%}
   <article>
     <h3>
     <a href="{{ page.url }}">{{ page.data.title }}
-    <time datetime="{{ page.date }}">{{ page.date | dateDisplay("LLLL d, y") }}</time>
+    <time datetime="{{ page.date }}">{{ page.date | dateDisplay() }}</time>
     </a>
     </h3>
   {{ page.excerpt }}

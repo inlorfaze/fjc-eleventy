@@ -6,7 +6,7 @@ image: /images/finley-chen-photo-min.jpg
 alt: Finley Chen portrait
 ---
 
-I am a Front-End WordPress developer who has been making websites for small businesses for over 3 years. I have experience making websites for many types of people - churches, nonprofits, my university, and more. Aside from WordPress, I have worked on full web applications with strong front-end skills in JavaScript, PHP, and React. 
+I am a Front-End WordPress developer who has been making websites for small businesses for over 3 years. I have experience making websites for many types of individuals and organizations - churches, nonprofits, my university, online stores,  and more. Aside from WordPress, I have worked on full web applications with strong front-end skills in JavaScript, PHP, and React. 
 
 I'm also an undergraduate Political Science student at California Polytechnic State University, San Luis Obispo. My academic work in political science studies the effects of different social media on an individual's political knowledge and participation. 
 
