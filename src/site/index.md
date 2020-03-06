@@ -5,7 +5,7 @@ layout: layouts/base.njk
 ---
 
 
-Hi, I'm Finley. Currently I'm freelancing as a WordPress developer. Previously, I was working as a WordPress WooCommerce developer at an [eCommerce startup](https://www.allpeople.co/) and a front-end developer at [Cal Poly](https://calpoly.edu). 
+Hi, I'm Finley. I make things on the web for small businesses. Previously, I was working as a WordPress WooCommerce developer at an [eCommerce startup](https://www.allpeople.co/) and a front-end developer at [Cal Poly](https://calpoly.edu). 
 I create custom WordPress websites that are fast, accessible, responsive, and SEO-optimized. 
 
 ## What I Do
