@@ -18,7 +18,7 @@
     {%- if date %}
      
       <p class="date">
-        Posted on <time datetime="{{ date }}">{{ date | dateDisplay }}</time>
+        <time datetime="{{ date }}">{{ date | dateDisplay }}</time>
       </p>
 
     {% endif %}

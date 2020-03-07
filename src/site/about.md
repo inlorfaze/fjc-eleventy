@@ -15,4 +15,4 @@ After graduation, I'm interested in projects like [Solid](https://solid.mit.edu/
 
 
 
-<a href="/files/FinleyChenResume2020.pdf">Download Resume</a>
+<a href="/files/FinleyChenResume2020.pdf" class="button">Download Resume</a>

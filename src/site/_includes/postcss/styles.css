@@ -17,6 +17,37 @@
   src: url("/fonts/GangsterGrotesk-Light.otf") format("opentype");
 }
 
+@font-face {
+  font-family: Manrope;
+  font-weight:300;
+  src: url("/fonts/Manrope-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: Manrope;
+  font-weight:400;
+  src: url("/fonts/Manrope-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: Manrope;
+  font-weight:500;
+  src: url("/fonts/Manrope-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: Manrope;
+  font-weight:600;
+  src: url("/fonts/Manrope-SemiBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: Manrope;
+  font-weight:700;
+  src: url("/fonts/Manrope-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: Manrope;
+  font-weight:800;
+  src: url("/fonts/Manrope-ExtraBold.woff2") format("woff2");
+}
+
 
 * {
   margin: 0;
@@ -43,9 +74,9 @@ body {
   "Segoe UI", "Roboto", "Oxygen",
   "Ubuntu", "Cantarell", "Fira Sans",
   "Droid Sans", "Helvetica Neue", sans-serif;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family:Manrope, sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.8;
   min-height: 100vh;
   background:  $page-color;
@@ -68,6 +99,8 @@ header {
   color:$page-color;
   padding-bottom:1em;
   font-family:GangsterGrotesk, sans-serif;
+  font-family:Manrope, sans-serif;
+
   background-color: #082e54;
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%239C92AC' fill-opacity='0.06' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   h1 {
@@ -107,6 +140,8 @@ footer {
       display:inline-block;
       padding-right: 10px;
       font-family:GangsterGrotesk, sans-serif;
+      font-family:Manrope, sans-serif;
+
     }
   }
 }
@@ -125,14 +160,14 @@ footer {
     left: 0;
     bottom: 0;
     top: 0;
-    width: 33.33%;  
+    width: 35%;  
 
     .container {
-      max-width:300px;
+      max-width:400px;
     }
   }  
   #wrapper {
-    padding-left: calc(33.33% + 2em);
+    padding-left: calc(35% + 2em);
     padding-right:1em;
     position: relative;
   }
@@ -147,10 +182,10 @@ footer {
     position:fixed;
     left:0;
     bottom: 0;
-    width:33.33%;
+    width:35%;
     padding-left:1em;
     .container {
-      max-width:300px;
+      max-width:400px;
     }
     color: rgba(255,255,255,0.7);
     a:link,
@@ -181,6 +216,8 @@ img {
   color:rgba(255,255,255,0.8);
   padding:0.5rem 1rem;
   font-family: GangsterGrotesk, sans-serif;
+  font-family:Manrope, sans-serif;
+
   &:hover {
     background-color:mix($text-color, $accent-color, 80%);
     text-decoration: none;
@@ -188,29 +225,32 @@ img {
 }
 h1, h2, h3 {
   color: $text-color;
-  font-weight: 700;
+  font-weight: 800;
   margin-top: 1.75em;
   margin-bottom:0.2em;
   line-height: 1;
   font-family: GangsterGrotesk, serif;
+  font-family:Manrope, sans-serif;
+
 }
 h1 {
-  font-size: 2em;
+  font-size: 1.6em;
   margin-top:0.4em;
   margin-bottom:0.2em;
   line-height: 1;
 
   @media (min-width: $mid) {
-    font-size: 2em;
+    font-size: 1.8em;
   };
   @media (min-width: $wide) {
-    font-size: 2.2em;
+    font-size: 2em;
   };
 }
 
 p {
   margin-top: 1em;
   margin-bottom: 1em;
+  letter-spacing: 0.1px;
 }
 
 .description {
@@ -252,10 +292,13 @@ a:focus {
 .nav {
   padding-top: 3em;
   padding-left:0;
+
   li {
     display: inline;
   }
   font-family:GangsterGrotesk, sans-serif;
+  font-family:Manrope, sans-serif;
+
   a:link,
   a:visited {
     display: inline-block;
@@ -328,26 +371,30 @@ pre {
 
 .listing {
   padding:0;
-  margin:0;
+  margin:1em 0;
+  article:first-of-type h3 a{
+  border-top:1px dashed $text-color;
+  }
   article {
     h3 {
-      margin:1em 0;
+      margin:0;
     }
     a {
       display:flex;
+      flex-direction: column;
+      @media (min-width: $mid) {
+        flex-direction: row;
+      }
       justify-content: space-between;
       align-items: baseline;
-      padding:1em;
-      background-color:$text-color;
-      color:rgba(255,255,255,0.9);
+      padding:1em 0;
+      border-bottom:1px dashed $text-color;
       &:hover {
         text-decoration:none;
-        background-color: #082e54;
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
       }
       time {
         font-size:0.9rem;
-        color:rgba(255,255,255,0.8);
       }
       }
   }
@@ -382,7 +429,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 
 .listing {
-  padding:0.5em 0;
 
 }
 

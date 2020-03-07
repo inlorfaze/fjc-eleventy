@@ -1,6 +1,6 @@
 ---
-title: Finley Chen Web Development
-description: I'm a front-end engineer and WordPress developer. Currently available for hire freelance projects.
+title: Finley Chen Web Dev
+description: I'm a front-end engineer and WordPress developer. Currently available for hire.
 layout: layouts/base.njk
 ---
 
