@@ -12,6 +12,23 @@
     <meta name="theme-color" content="#ffffff">
     <title>Finley Chen Web Development | {{ title }}</title>
     <meta name="description" content="{%- if description -%}{{ description }}{%- else -%}Finley Chen's personal website. Read his blog or ask him questions about WordPress or JavaScript.{%- endif -%}"/>
+        <!-- Matomo -->
+    <script type="text/javascript">
+      var _paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+      _paq.push(["setCookieDomain", "*.finleychen.dev"]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//matomo.fjchen.net/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '2']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
   </head>
   <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
       <div id="wrapper">
