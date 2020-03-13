@@ -1,57 +1,25 @@
 @import '_variables.css';
 @import '_syntax.css';
 @font-face {
-  font-family: GangsterGrotesk;
-  src: url('/fonts/GangsterGrotesk-Regular.otf') format("opentype");
+  font-family: Manrope;
+  src: url('/fonts/ManropeGX.ttf') format("truetype");
+  font-weight: 1 999;
+
 }
 
-@font-face {
-  font-family: GangsterGrotesk;
-  font-weight: bold;
-  src: url("/fonts/GangsterGrotesk-Bold.otf") format("opentype");
-}
 
-@font-face {
-  font-family: GangsterGrotesk;
-  font-weight:300;
-  src: url("/fonts/GangsterGrotesk-Light.otf") format("opentype");
-}
-
-@font-face {
-  font-family: Manrope;
-  font-weight:300;
-  src: url("/fonts/Manrope-Light.woff2") format("woff2");
-}
-@font-face {
-  font-family: Manrope;
-  font-weight:400;
-  src: url("/fonts/Manrope-Regular.woff2") format("woff2");
-}
-@font-face {
-  font-family: Manrope;
-  font-weight:500;
-  src: url("/fonts/Manrope-Medium.woff2") format("woff2");
-}
-@font-face {
-  font-family: Manrope;
-  font-weight:600;
-  src: url("/fonts/Manrope-SemiBold.woff2") format("woff2");
-}
-@font-face {
-  font-family: Manrope;
-  font-weight:700;
-  src: url("/fonts/Manrope-Bold.woff2") format("woff2");
-}
-@font-face {
-  font-family: Manrope;
-  font-weight:800;
-  src: url("/fonts/Manrope-ExtraBold.woff2") format("woff2");
-}
-
+/* General Styles */
 
 * {
   margin: 0;
+  
   padding: 0;
+  -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    letter-spacing: calc(-.03058em + .44638px);
+    font-weight: 500;
 }
 
 ::-moz-selection {
@@ -69,7 +37,6 @@ html {
 
 body {
   background-color: $page-color;
-  color: mix($text-color, $page-color, 90%);
   font-family: -apple-system, BlinkMacSystemFont,
   "Segoe UI", "Roboto", "Oxygen",
   "Ubuntu", "Cantarell", "Fira Sans",
@@ -93,16 +60,20 @@ body {
         }
   }
 
+  main.container {
+      margin-top:2em;
+    }
 
+
+/* Header and Nav */
 header {
   background-color: $text-color;
   color:$page-color;
-  padding-bottom:1em;
-  font-family:GangsterGrotesk, sans-serif;
+  padding-bottom:3em;
   font-family:Manrope, sans-serif;
-
+  text-align:center;
   background-color: #082e54;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%239C92AC' fill-opacity='0.06' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%239C92AC' fill-opacity='0.06' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   h1 {
     color:$page-color;
   }
@@ -114,6 +85,63 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     width: 160px;
   }
 }
+
+.nav {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left:0;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  
+  a:link,
+  a:visited {
+    display: inline-block;
+    border-bottom-style: none;
+    padding-right:1em;
+    text-align: left;
+    color: mix($page-color, $accent-color, 80%);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight:700;
+    font-size:0.9em;
+    letter-spacing:1px;
+  }
+  a:hover,
+  a:focus {
+    color: mix($page-color, $accent-color, 60%);
+    border-top-color: $text-color;
+    border-bottom-style: none;
+  }
+  
+  small {
+    display: block;
+    font-size: 0.7em;
+    color: rgba(255,255,255, 0.9);
+  }
+  .logo:link, .logo:visited {
+    font-weight:800;
+    font-size:2em;
+    transition:all 0.5s ease;
+    letter-spacing: 1px;
+    &:hover {
+      transform:rotate(3deg) ;
+    }
+  }
+  ul {
+    
+    li {
+      display:inline;
+      a {
+  
+      }
+    }
+  }
+}
+
+/* Footer */
+
 footer {
   padding-top: 4em;
   padding-bottom: 6em;
@@ -124,7 +152,7 @@ footer {
   a:visited {
     color: rgba(255,255,255, 0.9);
     color: $text-color;
-
+    text-decoration: none;
   }
   a:hover,
   a:focus {
@@ -145,66 +173,13 @@ footer {
     }
   }
 }
-#header-bg {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 10vw;
-}
-
-@media (min-width: $wide) {
-  header {
-    background-color: #082e54;
-    padding-left:1em;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    top: 0;
-    width: 35%;  
-
-    .container {
-      max-width:400px;
-    }
-  }  
-  #wrapper {
-    padding-left: calc(35% + 2em);
-    padding-right:1em;
-    position: relative;
-  }
-  main.container {
-    display: block;
-    padding: 6rem 6rem 6rem 1rem;
-    width: 100%;
-    
-  }
-
-  footer {
-    position:fixed;
-    left:0;
-    bottom: 0;
-    width:35%;
-    padding-left:1em;
-    .container {
-      max-width:400px;
-    }
-    color: rgba(255,255,255,0.7);
-    a:link,
-    a:visited {
-      color: rgba(255,255,255, 0.9);
-    }
-    a:hover,
-    a:focus {
-      color: rgba(255,255,255,1);
-    }
-  }
 
 
-  
-}
+
 
 img {
   max-width:100%;
-  margin: 1em 0;
+  margin: 1em auto;
   border-radius: 4px;
   border: solid 2px #fff;
   box-shadow: 0 14px 28px rgba(0,0,0,0.17), 0 10px 10px rgba(0,0,0,0.15);
@@ -217,15 +192,15 @@ img {
   padding:0.5rem 1rem;
   font-family: GangsterGrotesk, sans-serif;
   font-family:Manrope, sans-serif;
-
+  
+  text-decoration: none;
   &:hover {
     background-color:mix($text-color, $accent-color, 80%);
-    text-decoration: none;
   }
 }
 h1, h2, h3 {
   color: $text-color;
-  font-weight: 800;
+  font-weight: 600;
   margin-top: 1.75em;
   margin-bottom:0.2em;
   line-height: 1;
@@ -234,29 +209,32 @@ h1, h2, h3 {
 
 }
 h1 {
-  font-size: 1.6em;
+  font-size: 2em;
   margin-top:0.4em;
   margin-bottom:0.2em;
-  line-height: 1;
-
+  line-height: 1.1;
+  font-weight:800;
   @media (min-width: $mid) {
-    font-size: 1.8em;
+    font-size: 2.5em;
   };
   @media (min-width: $wide) {
-    font-size: 2em;
+    font-size: 2.75em;
   };
 }
+
+
 
 p {
   margin-top: 1em;
   margin-bottom: 1em;
-  letter-spacing: 0.1px;
 }
 
 .description {
   font-size: 1.1em;
-  margin-top: 0.75em;
   color: rgba(255,255,255, 0.7 );
+  margin: 0.75em auto;
+  max-width:375px;
+  font-weight:700;
 }
 
 .subtitle {
@@ -273,13 +251,16 @@ a:link,
 a:visited {
   color: $text-color;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 510;
+  transition:color .2s ease;
+  text-decoration: underline;
 }
 a:hover,
 a:focus {
   color: $text-color;
   border-bottom-color: $text-color;
-  text-decoration: underline;
+  transition: color .2s ease;
+
 }
 
 .nakedLink a:link,
@@ -289,42 +270,6 @@ a:focus {
   border-bottom-style:none;
 }
 
-.nav {
-  padding-top: 3em;
-  padding-left:0;
-
-  li {
-    display: inline;
-  }
-  font-family:GangsterGrotesk, sans-serif;
-  font-family:Manrope, sans-serif;
-
-  a:link,
-  a:visited {
-    display: inline-block;
-
-    border-bottom-style: none;
-    padding-top: 0.8em;
-    padding-bottom: 2em;
-    margin-left: 0;
-    margin-right: 0.7em;
-    text-align: left;
-    color: mix($page-color, $accent-color, 80%);
-    text-decoration: none;
-  }
-  a:hover,
-  a:focus {
-      color: mix($page-color, $accent-color, 60%);
-      border-top-color: $text-color;
-      border-bottom-style: none;
-  }
-
-  small {
-    display: block;
-    font-size: 0.7em;
-    color: rgba(255,255,255, 0.9);
-  }
-}
 
 
 code {
@@ -374,6 +319,7 @@ pre {
   margin:1em 0;
   article:first-of-type h3 a{
   border-top:1px dashed $text-color;
+  
   }
   article {
     h3 {
@@ -381,18 +327,36 @@ pre {
     }
     a {
       display:flex;
+
       flex-direction: column;
+      span {
+        order:2;
+        font-weight:500;
+      }
+      time {
+        order:1;
+        flex: 0 0 auto; 
+        align-self: center;
+      }
       @media (min-width: $mid) {
         flex-direction: row;
+        span {
+          order:1;
+        }
+        time {
+          order:2;
+        }
       }
       justify-content: space-between;
       align-items: baseline;
       padding:1em 0;
       border-bottom:1px dashed $text-color;
+      text-decoration:none;
       &:hover {
-        text-decoration:none;
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
       }
+
+      
       time {
         font-size:0.9rem;
       }
@@ -427,8 +391,34 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23cb688a' fill-opacity='0.44'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
+.url {
+  display:flex;
+  align-items: center;
+  justify-content: start;
+  width:150px;
+  margin:0.75em auto;
+  :link, :visited {
 
-.listing {
+    text-decoration: none;
+  }
+  span {
+  }
+  svg {
+    padding-left:5px;
+  }
+}
 
+.callout {
+  text-align:center;
+  font-size:0.8em;
+  margin:1em 0;
+  padding:0.5em;
+  background-color: mix($text-color, #fff, 20%);
+}
+blockquote {
+  padding:0.3em;
+  padding-left:0.5em;
+  background-color: mix($text-color, #fff,10%);
+  border-left: $text-color 3px solid;
 }
 

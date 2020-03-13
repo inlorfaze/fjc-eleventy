@@ -1,16 +1,17 @@
 <header>
     <div class="container">
-    <ul class="nav">
-      <li>
-        <a href="/">home</a>
-      </li>
-      <li>
-        <a href="/about">about me</a>
-      </li>
-      <li>
-        <a href="/projects">projects</a>
-      </li>
-    </ul>
+    <nav class="nav">
+      {# <a href="/" class="logo">{{ '/src/site/images/fc-logo-color.svg' | svgContents | safe }}</a> #}
+      <a href="/" class="logo">FC</a>
+      <ul>
+        <li>
+          <a href="/about">About Me</a>
+        </li>
+        <li>
+          <a href="/work">Work</a>
+        </li>
+      </ul>
+    </nav>
 
     <h1>{{ title }}</h1>
     {%- if subtitle %}<p class="subtitle">{{ subtitle | safe }}</p>{% endif %}
@@ -27,7 +28,7 @@
     {% endif %}
 
     {%- if url %}
-      <a class="url" href="{{ url }}">Visit Website &nearr;</a>
+      <a class="url" href="{{ url }}"><span>Visit Website </span> {{ '/src/site/images/icons/link.svg' | svgContents | safe }} </a>
     {% endif %}
     </div>
 </header>

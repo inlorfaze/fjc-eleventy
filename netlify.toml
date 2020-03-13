@@ -15,8 +15,8 @@
 
 [[redirects]]
   from = "https://fjchen.net"
-    to = "/"
-    status = 301
-    force = true
-    query = {path = ":path"}
-    conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
+  to = "/"
+  status = 301
+  force = true
+  query = {path = ":path"}
+  conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}

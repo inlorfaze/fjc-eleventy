@@ -1,6 +1,6 @@
 ---
 title: Finley Chen Web Dev
-description: I'm a front-end engineer and WordPress developer. Currently available for hire.
+description: I'm a front-end engineer and WordPress developer based in San Luis Obispo, CA. Currently available for hire.
 layout: layouts/base.njk
 ---
 
@@ -22,10 +22,11 @@ Whether you are a recruiter, business owner, or just want to ask me a question, 
 
 ## Posts 
 <section class="listing">
-{%- for page in collections.post -%}
+{%- for page in collections.post | reverse -%}
   <article>
     <h3>
-    <a href="{{ page.url }}">{{ page.data.title }}
+    <a href="{{ page.url }}">
+    <span>{{ page.data.title }}</span>
     <time datetime="{{ page.date }}">{{ page.date | dateDisplay() }}</time>
     </a>
     </h3>

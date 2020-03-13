@@ -1,5 +1,6 @@
 
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const svgContents = require("eleventy-plugin-svg-contents");
 
 
 module.exports = function(config) {
@@ -16,6 +17,7 @@ module.exports = function(config) {
   config.addFilter("excerpt", require("./src/utils/filters/section.js"));
   // add support for syntax highlighting
   config.addPlugin(syntaxHighlight);
+  config.addPlugin(svgContents);
 
   // minify the html output
   config.addTransform("htmlmin", require("./src/utils/minify-html.js"));
