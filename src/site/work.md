@@ -77,9 +77,6 @@ layout: layouts/base.njk
   <div class="work-info">
     <div>
     <p>YourChristmasStore is an online holiday store for holiday figurines, ornaments, ribbons, and more, based in Escondido, CA.</p>
-      <p>
-        I migrated an old Magento 1 version of YourChristmasStore to WordPress. Added 1000+ products, created redirects and optimized permalinks for SEO. Provided maintenance, backups, and ran sales and email campaigns.
-      </p>
       <ul>
         <li>Migrated the Magento database, including 400+ products to WooCommerce</li>
         <li>Created a custom theme that improved on the previous Magento site's design</li>
