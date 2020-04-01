@@ -1,5 +1,0 @@
-{
-  "layout" : "layouts/project.md",
-  "tags" : "project",
-  "templateEngineOverride": "njk,md"
-}

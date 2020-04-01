@@ -1,12 +1,20 @@
 ---
-title: Finley Chen Web Dev
-description: I'm a front-end engineer and WordPress developer based in San Luis Obispo, CA. Currently available for hire.
 layout: layouts/base.njk
 ---
+<h1 id="home-title">WordPress Web Development</h1>
+<p class="description">Hands-on, collaborative development for high converting, quality websites.</p>
 
+<section class="divider">
+  <a href="/contact" class="button">Get in Touch</a>
+  <span> or
+  <a href="/work">See what I do</a>
+</section>
+
+<div class="divider"></div>
 
 Hi, I'm Finley. I make things on the web for small businesses. Previously, I was working as a WordPress WooCommerce developer at an [eCommerce startup](https://www.allpeople.co/) and a front-end developer at [Cal Poly](https://calpoly.edu). 
 I create custom WordPress websites that are fast, accessible, responsive, and SEO-optimized. 
+
 
 ## Services 
 I work with local businesses to improve their digital experiences. 

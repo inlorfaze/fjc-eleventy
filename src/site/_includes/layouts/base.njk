@@ -4,15 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mxb5eoq.css">
     <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicons/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512"  href="/images/favicons/android-chrome-512x512.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
     <link rel="apple-touch-icon" href="/images/favicons/apple-touch-icon.png">
     <meta name="theme-color" content="#ffffff">
-    <title>Finley Chen Web Development | {{ title }}</title>
-    <meta name="description" content="{%- if description -%}{{ description }}{%- else -%}Finley Chen's personal website. Read his blog or ask him questions about WordPress or JavaScript.{%- endif -%}"/>
-        <!-- Matomo -->
+    <title>Finley Chen Web Development {%- if description -%}  {{ title }}{%- endif -%}</title>
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+    <meta name="description" content="{%- if description -%}{{ description }}{%- else -%}Finley Chen's personal website. Front-end engineer and WordPress developer based in San Luis Obispo, CA. Currently available for hire.{%- endif -%}"/>
+    <!-- Matomo -->
     <script type="text/javascript">
       var _paq = window._paq || [];
       /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
@@ -31,9 +34,31 @@
     <!-- End Matomo Code -->
   </head>
   <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
+  <div class="overlay">
+    <div class="overlay-loader">Finley Chen</div>
+  </div>
       <div id="wrapper">
       {% include "header.njk" %}
       <main class="container">
+        {%- if title -%}<h1 id="title">{{ title }}</h1>{%- endif -%}
+    {%- if subtitle %}<p class="subtitle">{{ subtitle | safe }}</p>{% endif %}
+    {%- if description %}<p class="description">{{ description | safe }}</p>{% endif %}
+    {%- if date %}
+     
+      <p class="date">
+        <time datetime="{{ date }}">{{ date | dateDisplay }}</time>
+      </p>
+
+    {% endif %}
+    {%- if image %}
+      <img class="header-image" src="{{ image }}" alt="{{ alt }}" />
+    {% endif %}
+
+    {%- if url %}
+      <a class="url" href="{{ url }}"><span>Visit Website </span> &rarr; </a>
+    {% endif %}
+
+    <div class="divider"></div>
       {{ content | safe }}
       </main>
       {% include "footer.njk" %}
@@ -43,8 +68,9 @@
       {% include "js/hello.js" %}
     {% endset %}
     </div>
-    <script>{{ js | jsmin | safe }}</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
 
+    <script>{{ js | jsmin | safe }}</script>
   </body>
 </html>
 

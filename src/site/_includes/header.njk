@@ -2,33 +2,22 @@
     <div class="container">
     <nav class="nav">
       {# <a href="/" class="logo">{{ '/src/site/images/fc-logo-color.svg' | svgContents | safe }}</a> #}
-      <a href="/" class="logo">FC</a>
+      <a href="/" class="logo">
+{{ '/src/site/images/icons/fc-logo.svg' | svgContents | safe }}
+</a>
       <ul>
         <li>
-          <a href="/about">About Me</a>
+          <a href="/about" {% if page.url == "/about/" %} data-current="current item"{% endif %}>About Me</a>
         </li>
         <li>
-          <a href="/work">Work</a>
+          <a href="/work" {% if page.url == "/work/" %} data-current="current item"{% endif %}>Work</a>
+        </li>
+        <li>
+          <a href="/contact" {% if page.url == "/contact/" %} data-current="current item"{% endif %}>Contact</a>
         </li>
       </ul>
     </nav>
 
-    <h1>{{ title }}</h1>
-    {%- if subtitle %}<p class="subtitle">{{ subtitle | safe }}</p>{% endif %}
-    {%- if description %}<p class="description">{{ description | safe }}</p>{% endif %}
-    {%- if date %}
-     
-      <p class="date">
-        <time datetime="{{ date }}">{{ date | dateDisplay }}</time>
-      </p>
-
-    {% endif %}
-    {%- if image %}
-      <img src="{{ image }}" alt="{{ alt }}" />
-    {% endif %}
-
-    {%- if url %}
-      <a class="url" href="{{ url }}"><span>Visit Website </span> {{ '/src/site/images/icons/link.svg' | svgContents | safe }} </a>
-    {% endif %}
+  
     </div>
 </header>
