@@ -39,8 +39,5 @@ There's always new ways to speed up the development and design process by utiliz
 
 I'm also an undergraduate Political Science student at California Polytechnic State University, San Luis Obispo. My academic work in political science studies the effects of different social media on an individual's political knowledge and participation. 
 
-After graduation, I'm interested in projects like [Solid](https://solid.mit.edu/), which reshapes our idea of digital privacy - the decentralization of the web - to tackle a slew of political, social, and economic issues. It is in my interest to bridge my political science research goals with a computer-science related project.
-
-
 
 <a href="/files/FinleyChenResume2020.pdf" class="button">Download Resume</a>
