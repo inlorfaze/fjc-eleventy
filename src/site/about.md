@@ -10,9 +10,8 @@ I create custom WordPress websites that are fast, accessible, responsive, and SE
 
 
 ## Services 
-I am a Front-End WordPress developer who has been making websites for small businesses for over 3 years. I have experience making websites for many types of individuals and organizations - churches, nonprofits, my university, online stores,  and more. Aside from WordPress, I have worked on full web applications with strong front-end skills in JavaScript, PHP, and React with a focus on accessible and functional UI/UX. 
+I am a Front-End WordPress developer who has been making websites for small businesses for over 3 years. I have experience making websites for many types of individuals and organizations - churches, nonprofits, my university, online stores,  and more. Aside from WordPress, I have worked end-to-end on full-stack web applications with strong front-end skills in JavaScript, PHP, and React with a focus on accessible and functional UI/UX. 
 
-I won't use bloated, insecure plugins or one-size-fits-all, cookie-cutter themes.
 
 Examples of services I provide:
 <ul class="dash">
@@ -23,6 +22,7 @@ Examples of services I provide:
     <li>Developing custom features and plugins</li>
 </ul>
 
+I won't use bloated, insecure plugins or one-size-fits-all, cookie-cutter themes. 
 
 
 ## Technologies & Tools

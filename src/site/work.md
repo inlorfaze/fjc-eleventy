@@ -1,9 +1,61 @@
 ---
-title: Projects
+title: Portfolio
 description: Examples of selected past work and side projects.
 layout: layouts/base.njk
 ---
 
+<section class="projects">
+<h2> Side projects I'm currently working on</h2>
+<article class="project-card">
+<h3><a href="https://haipoo.fjchen.net">Haipoo</a></h3>
+<ul class="dash">
+  <li>A website for sharing bathroom poetry in the form of haikus.</li>
+  <li>Built with serverless architecture on Gatsby and Firebase</li>
+</ul>
+</article>
+
+
+
+<article class="project-card">
+<h3><a href="https://slotechcompanies.com">SLO Tech Companies</a></h3>
+<ul class="dash">
+  <li>Hand-built archive of tech companies with offices in San Luis Obispo, CA</li>
+  <li>Built in Eleventy with Gatsby</li>
+</ul>
+</article>
+
+<article class="project-card">
+<h3><a href="https://lolabilities.com">LolAbilities</a></h3>
+<ul class="dash">
+  <li>Tool for learning the abilities of champions in an active League of Legends game</li>
+  <li>Built in NextJS, Express</li>
+</ul>
+</article>
+
+<article class="project-card">
+<h3><a href="https://polytalent.net">Polytalent</a></h3>
+<ul class="dash">
+  <li>A freelance job marketplace for Cal Poly students</li>
+  <li>Students with talent can post their services</li>
+  <li>Currently being built with Node.js, Express, MySQL, and React</li>
+</ul>
+</article>
+
+
+<article class="project-card">
+<h3><a href="https://bilgewater.net">Bilgewater.net</a></h3>
+<ul class="dash">
+  <li>Online community for League of Legends champion Gangplank</li>
+</ul>
+</article>
+
+
+</section>
+<br />
+
+## Past Work Examples
+
+<br />
 <article class="work-card">
   <a href="https://atownpark.com/">
     <img src="/images/work/atownpark-screenshot.png" alt="grace baptist screnshot">
@@ -108,3 +160,5 @@ layout: layouts/base.njk
       <li><a href="https://www.lighthouseatascadero.org/">https://www.lighthouseatascadero.org/</a></li>
     </ul>
 </article>
+
+
