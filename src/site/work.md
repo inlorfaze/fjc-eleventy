@@ -4,8 +4,8 @@ description: Examples of selected past work and side projects.
 layout: layouts/base.njk
 ---
 
-<section class="projects">
 <h2> Side projects I'm currently working on</h2>
+<section class="projects">
 <article class="project-card">
 <h3><a href="https://haipoo.fjchen.net">Haipoo</a></h3>
 <ul class="dash">
@@ -19,7 +19,7 @@ layout: layouts/base.njk
 <article class="project-card">
 <h3><a href="https://slotechcompanies.com">SLO Tech Companies</a></h3>
 <ul class="dash">
-  <li>Hand-built archive of tech companies with offices in San Luis Obispo, CA</li>
+  <li>Hand-selected archive of tech companies with offices in San Luis Obispo, CA</li>
   <li>Built in Eleventy with Gatsby</li>
 </ul>
 </article>
@@ -42,12 +42,6 @@ layout: layouts/base.njk
 </article>
 
 
-<article class="project-card">
-<h3><a href="https://bilgewater.net">Bilgewater.net</a></h3>
-<ul class="dash">
-  <li>Online community for League of Legends champion Gangplank</li>
-</ul>
-</article>
 
 
 </section>

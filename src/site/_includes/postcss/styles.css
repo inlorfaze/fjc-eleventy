@@ -617,6 +617,7 @@ blockquote {
 
     img {
       transition: 0.4s all ease;
+      border-radius:0;
     }
 
     &:hover {
