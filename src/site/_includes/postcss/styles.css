@@ -370,9 +370,10 @@ p {
   margin-bottom: 1rem;
 }
 .hero {
-  text-align:center;
+  text-align:left;
   padding-top:6rem;
   padding-bottom:10rem;
+  max-width:50ch;
   .button {
     font-size:1.2rem;
     margin-top:2rem;
@@ -385,8 +386,7 @@ p {
   
 .description {
   font-size: 1.3rem;
-  font-weight: 600;
-  text-align: center;
+  font-weight: 400;
 }
 
 .subtitle {
@@ -648,7 +648,6 @@ blockquote {
   gap: 2rem;
   padding: 1rem 0;
   padding-bottom: 5rem;
-  visibility: hidden;
 
   .work-info {
     display: flex;

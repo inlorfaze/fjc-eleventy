@@ -3,13 +3,13 @@ layout: layouts/base.njk
 ---
 
 <section class="hero">
-  <h1 id="home-title">Front End WordPress Web Developer</h1>
+  <h1 id="home-title">Freelance Web Developer specializing in WordPress</h1>
   <p class="description">Hands-on, collaborative development for high converting, quality websites.</p>
 </section>
 
 <section class="">
 <article class="work-card">
-  <a href="https://atownpark.com/">
+  <a href="https://www.skinnykitchen.com/">
     <img src="/images/work/Skinny-Kitchen-Logo.png" alt="Skinnykitchen logo">
     <span>Visit Site</span>
   </a>
