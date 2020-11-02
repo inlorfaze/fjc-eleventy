@@ -78,6 +78,9 @@ body {
 
 }
 
+strong {
+  font-weight:600;
+}
 
 /* overlay animation */
 .overlay {
@@ -230,7 +233,7 @@ header {
 
 footer {
   padding-bottom: 6rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   background-color: $text-color;
   color:$page-color;
 
@@ -380,10 +383,6 @@ p {
   }
 }
 
-.title {
-  text-align: center;  
-}
-  
 .description {
   font-size: 1.3rem;
   font-weight: 400;
@@ -798,10 +797,5 @@ ul.dash>li:before {
 
     .content-header {
       padding:2rem 0;
+        text-align:center;
     }
-
-      	.alignwide {
-		margin: 32px calc( ( 767px - 920px ) / 2 );
-		max-width: 920px;
-		width: 920px;
-	}

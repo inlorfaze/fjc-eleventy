@@ -14,8 +14,21 @@ alt: Finley Chen portrait
 </section>
 
 ## Experience 
-Most recently, I was working as a WordPress WooCommerce developer at an <a href="https://www.allpeople.co/">eCommerce startup</a> and a front-end developer at <a href="https://calpoly.edu">Cal Poly. </a>
 
+2017 - *Present*  
+**Freelance Web Developer**  
+
+Jun 2019 – Dec 2019  
+**Frontend Web Developer at [AllPeople](https://allpeople.co/)**  
+
+Jan 2019 – Aug 2019  
+**Student Front End Developer at [California Polytechnic State University-San Luis Obispo](https://afd.calpoly.edu)**  
+
+May 2018 – Aug 2019  
+**WordPress Web Developer & DevOps at [Colony Media](https://13starsmedia.com/)**  
+
+Apr 2017 – Sep 2018  
+**Web Developer at [Canterbury Gardens & Gifts](https://yourchristmasstore.com)**  
 
 ## Services 
 I am a Front-End WordPress developer who has been making websites for small businesses for over 3 years. I have experience working with many types of individuals and organizations - churches, nonprofits, my university, online stores,  and more. Aside from WordPress, I also work end-to-end on full-stack web applications with strong front-end skills in JavaScript, PHP, and React with a focus on accessible and functional UI/UX. 
