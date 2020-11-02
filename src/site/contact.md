@@ -1,6 +1,6 @@
 ---
 title: Contact
-description: Tell me a little bit about you and how I could help. 
+description: Let's talk about what I can do to help.
 layout: layouts/base.njk
 ---
 

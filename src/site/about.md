@@ -2,11 +2,19 @@
 title: About Me
 layout: layouts/base.njk
 description: Striving for greatness
-image: /images/finley-chen-photo-min.jpg
 alt: Finley Chen portrait
 ---
-Hi, I'm Finley. I make things on the web for small businesses. Previously, I was working as a WordPress WooCommerce developer at an [eCommerce startup](https://www.allpeople.co/) and a front-end developer at [Cal Poly](https://calpoly.edu). 
-I create custom WordPress websites that are fast, accessible, responsive, and SEO-optimized. 
+
+<section class="about-intro align-wide">
+    <img class="header-image" src="/images/finley-chen-photo-min.jpg" alt="Finley Chen Portrait" />
+    <div>
+        <p>Hi, I'm Finley. I make things on the web for small businesses. I'm currently a freelancer working on several projects, most notably <a href="https://www.skinnykitchen.com">Skinnykitchen</a> and a redesign for <a href="https://ironhardware.com">Paso Robles Ironworks</a>.    </p>     
+        <p>I create custom WordPress websites that are fast, accessible, responsive, and SEO-optimized. </p>
+    </div>
+</section>
+
+## Experience 
+Most recently, I was working as a WordPress WooCommerce developer at an <a href="https://www.allpeople.co/">eCommerce startup</a> and a front-end developer at <a href="https://calpoly.edu">Cal Poly. </a>
 
 
 ## Services 

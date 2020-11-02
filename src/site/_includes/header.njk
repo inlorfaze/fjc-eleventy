@@ -1,16 +1,14 @@
 <header>
-    <div class="container">
+    <div class="container wide">
     <nav class="nav">
       {# <a href="/" class="logo">{{ '/src/site/images/fc-logo-color.svg' | svgContents | safe }}</a> #}
-      <a href="/" class="logo">
-{{ '/src/site/images/icons/fc-logo.svg' | svgContents | safe }}
-</a>
+      <a href="/" class="logo"> 
+        {# <img class="header-image" src="/images/finley-chen-photo-min.jpg" alt="Finley Chen Portrait" /> #}
+        <span>Finley Chen</span>
+      </a>
       <ul>
         <li>
           <a href="/about" {% if page.url == "/about/" %} data-current="current item"{% endif %}>About Me</a>
-        </li>
-        <li>
-          <a href="/work" {% if page.url == "/work/" %} data-current="current item"{% endif %}>Work</a>
         </li>
         <li>
           <a href="/contact" {% if page.url == "/contact/" %} data-current="current item"{% endif %}>Contact</a>

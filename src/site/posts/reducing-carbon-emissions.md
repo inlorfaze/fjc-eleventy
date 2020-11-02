@@ -12,13 +12,13 @@ I mean, it makes sense that a slow, resource-heavy website would take more proce
 > 
 > *&mdash; [ACEEE 2012](https://www.aceee.org/files/proceedings/2012/data/papers/0193-000409.pdf)*
 
-### WordPress: Bloated af
+### WordPress out of the box: very bloated
 Regarding WordPress, the median WordPress page size is around [2.25 MB](https://httparchive.org/reports/page-weight?lens=wordpress). That's pretty big. What can we do as WordPress developers to help alleviate this?
 
 One of the main reasons for the large page size must lie in bloated themes and plugins - the solution for hobbyists, but bane of the seasoned WordPress developer. Bloated themes and plugins usually take a shotgun approach to features - to make it easy and fast for the developer to come up with a working website. Of course, easy and fast for *development*, but the result is usually poor UI/UX and slow-loading sites for the users who actually *use* the website. No matter how much CSS/JS you minify, however many settings you configure in WP Rocket, or however small you compress your images, your huge Divi theme with Visual Composer could undoubtedly be replaced by a custom theme build from the ground up with Gutenberg or Advanced Custom Fields.
 
 ### Conclusion
-The problem comes down to the user - if you are an amateur WordPress designer who can't code, it's going to be much tougher to prioritize speed and page size, but you need a site anyways and you'll take what you can get, so themes and plugins that help you build everything visually from a library of compenents and themes
+The problem comes down to the user - if you are an amateur WordPress designer who isn't comfortable with the ins and outs of WordPress and need to add plugins for website features, it's going to be much tougher to prioritize speed and page size. You need a site anyways and you'll take what you can get, so themes and plugins that help you build everything visually from a library of compenents and themes
 
 
 ### Additional Reading
