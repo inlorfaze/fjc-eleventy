@@ -3,7 +3,7 @@ layout: layouts/base.njk
 ---
 
 <section class="hero">
-  <h1 id="home-title">Front End Engineer specializing in WordPress.</h1>
+  <h1 id="home-title">Front End WordPress Web Developer</h1>
   <p class="description">Hands-on, collaborative development for high converting, quality websites.</p>
 </section>
 
@@ -20,7 +20,7 @@ layout: layouts/base.njk
      Skinnykitchen is a healthy recipe blog run by Nancy Fox. I've built her a custom WordPress theme that can meet her needs, but also be flexible enough for changes. </p>
     <ul>
       <li>January 2020</li>
-      <li><a href="https://atownpark.com/">https://atownpark.com/</a></li>
+      <li><a href="https://www.skinnykitchen.com/">https://www.skinnykitchen.com/</a></li>
     </ul>
   </div>
 </article>

@@ -11,4 +11,13 @@ function btnHandler(selector, callback) {
 // gsap.fromTo('.overlay', {zIndex: 1, opacity: 1}, {duration:1, zIndex:-1, opacity:0, ease:'power1.in' });
 
 // gsap.from('#wrapper', {duration:0.8, opacity:0});
-ScrollReveal().reveal('.work-card', { delay: 100, duration:1000});
+
+// var srConfig = {
+//   easing: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
+//   delay: 100, 
+//   duration:500,
+//   distance: '20px',
+// }
+// ScrollReveal().reveal('.hero', srConfig);
+// ScrollReveal().reveal('.work-card', srConfig);
+// ScrollReveal().reveal('.project-card', srConfig);

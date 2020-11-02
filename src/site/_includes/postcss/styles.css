@@ -229,7 +229,6 @@ header {
 /* Footer */
 
 footer {
-  padding-top: 4rem;
   padding-bottom: 6rem;
   font-size: 0.8rem;
   background-color: $text-color;
@@ -372,7 +371,7 @@ p {
 }
 .hero {
   text-align:center;
-  padding-top:10rem;
+  padding-top:6rem;
   padding-bottom:10rem;
   .button {
     font-size:1.2rem;
