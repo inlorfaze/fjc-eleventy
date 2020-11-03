@@ -1,7 +1,7 @@
 ---
 title: About Me
 layout: layouts/base.njk
-description: Striving for greatness
+description: 
 alt: Finley Chen portrait
 ---
 
@@ -12,6 +12,28 @@ alt: Finley Chen portrait
         <p>I create custom WordPress websites that are fast, accessible, responsive, and SEO-optimized. </p>
     </div>
 </section>
+
+<div class="divider"></div>
+
+
+## Services 
+I am a Front-End WordPress developer who has been making websites for small businesses for over 3 years. I have experience working with many types of individuals and organizations - churches, nonprofits, my university, online stores,  and more. Aside from WordPress, I also work end-to-end on full-stack web applications with strong front-end skills in JavaScript, PHP, and React with a focus on accessible and functional UI/UX. 
+
+
+Examples of services I provide:
+<ul class="dash">
+    <li>Designing and developing robust WordPress websites</li>
+    <li>Hosting and maintaining your website long-term</li>
+    <li>Business digital strategy & search engine marketing</li>
+    <li>Developing a WooCommerce or Shopify store</li>
+    <li>Developing custom features and plugins</li>
+    <li>Developing a robust, performant <a href="https://jamstack.org/">Jamstack</a> site with headless WordPress</li>
+</ul>
+
+I won't use bloated, insecure plugins or one-size-fits-all, cookie-cutter themes. 
+
+<div class="divider"></div>
+
 
 ## Experience 
 
@@ -30,21 +52,7 @@ May 2018 – Aug 2019
 Apr 2017 – Sep 2018  
 **Web Developer at [Canterbury Gardens & Gifts](https://yourchristmasstore.com)**  
 
-## Services 
-I am a Front-End WordPress developer who has been making websites for small businesses for over 3 years. I have experience working with many types of individuals and organizations - churches, nonprofits, my university, online stores,  and more. Aside from WordPress, I also work end-to-end on full-stack web applications with strong front-end skills in JavaScript, PHP, and React with a focus on accessible and functional UI/UX. 
-
-
-Examples of services I provide:
-<ul class="dash">
-    <li>Designing and developing robust WordPress websites</li>
-    <li>Hosting and maintaining your website long-term</li>
-    <li>Business digital strategy & search engine marketing</li>
-    <li>Developing a WooCommerce or Shopify store</li>
-    <li>Developing custom features and plugins</li>
-    <li>Developing a robust, performant <a href="https://jamstack.org/">Jamstack</a> site with headless WordPress</li>
-</ul>
-
-I won't use bloated, insecure plugins or one-size-fits-all, cookie-cutter themes. 
+<div class="divider"></div>
 
 
 ## Technologies & Tools

@@ -20,3 +20,8 @@
   force = true
   query = {path = ":path"}
   conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
+
+[[redirects]]
+  from = "/*"
+  to = "/404
+  status = 404 

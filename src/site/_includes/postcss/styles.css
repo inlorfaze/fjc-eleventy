@@ -125,7 +125,7 @@ strong {
 }
 
 main.container {
-  padding-bottom:2rem;
+  padding-bottom:6rem;
   }
 
 
@@ -329,6 +329,7 @@ button.button {
   font-size:1rem;
   text-decoration: none;
   border: 1px solid $accent-color;
+  border-radius:4px;
   transition: 0.1s ease-in all;
   &:hover {
     background-color: $accent-color;

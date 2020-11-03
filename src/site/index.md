@@ -19,7 +19,7 @@ layout: layouts/base.njk
     <p>
      Skinnykitchen is a healthy recipe blog run by Nancy Fox. I've built her a custom WordPress theme that can meet her needs, but also be flexible enough for changes. </p>
     <ul>
-      <li>January 2020</li>
+      <li>November 2020</li>
       <li><a href="https://www.skinnykitchen.com/">https://www.skinnykitchen.com/</a></li>
     </ul>
   </div>
