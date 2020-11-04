@@ -68,7 +68,7 @@ body {
 
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.5;
   min-height: 100vh;
   background: $page-color;
 
@@ -150,9 +150,7 @@ header {
 }
 
 .nav {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 0;
+  padding:4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -258,7 +256,9 @@ footer {
     flex-direction: row;
     }
     p {
-      margin:0;
+    }
+    ul {
+      margin-top:1rem;
     }
     ul li a:link,
   ul li a:visited {
@@ -342,7 +342,7 @@ h2,
 h3 {
   font-weight: 600;
   margin-top: 1.75rem;
-  margin-bottom: 0.2rem;
+  margin-bottom: 1rem;
   line-height: 1;
 
 
@@ -350,8 +350,6 @@ h3 {
 
 h1 {
   font-size: 2rem;
-  margin-top: 0.4rem;
-  margin-bottom: 0.2rem;
   line-height: 1.1;
 
   @media (min-width: $mid) {
@@ -370,9 +368,9 @@ h1 {
 
 
 p {
-  margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
 .hero {
   text-align:left;
   padding-top:6rem;
@@ -540,7 +538,7 @@ pre {
   h1,
   h2,
   h3,
-  g4 {
+  h4 {
 
     color: $page-color;
   }
@@ -610,21 +608,23 @@ blockquote {
 
 
   label {
-    padding-bottom: 0.5rem;
     font-weight: 600;
+    padding-bottom:1rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     font-size: 0.9rem;
+    display:block;
   }
 
   input,
   textarea {
-    padding: 0.2rem;
+    padding: 1rem;
     display: block;
     width: 100%;
     outline: none;
     border: 0;
-    border-bottom: 1px solid $text-color;
+    border-radius:4px;
+    background-color: mix($text-color, $page-color, 5%);
     font-weight: 600;
     font-size: 1.2rem;
 
@@ -635,6 +635,10 @@ blockquote {
   }
 }
 
+  .works {
+
+    }
+
 .work-card {
    display: grid;
   @media screen and (min-width:$mid) {
@@ -643,11 +647,18 @@ blockquote {
       font-size:2rem;
     }
     grid-template-columns:repeat(2, minmax(0, 1fr));
+    
+    &:nth-child(2) {
+      a {
+        order:2;
+      }
 
+    }
   }
   gap: 2rem;
   padding: 1rem 0;
-  padding-bottom: 5rem;
+  padding-bottom: 10rem;
+
 
   .work-info {
     display: flex;
@@ -704,14 +715,14 @@ blockquote {
 ul.dash {
   list-style: none;
   margin-left: 0;
-  padding-left: 1em;
+  padding-left: 1rem;
 }
 
 ul.dash>li:before {
   display: inline-block;
   content: "-";
-  width: 1em;
-  margin-left: -1em;
+  width: 1rem;
+  margin-left: -1rem;
 }
 
 .calltoaction {
@@ -741,7 +752,7 @@ ul.dash>li:before {
 .project-card {
   background-color: $text-color;
   color:$page-color;
-  padding: 2rem;
+  padding: 1rem;
   border-radius:4px;
   display:flex;
   flex-direction: column;
@@ -762,7 +773,7 @@ ul.dash>li:before {
 
   h3 {
     margin: 0;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
     border-bottom: 1px solid #e62267;
     padding: 0.4em 0;
     a:link,
@@ -799,4 +810,33 @@ ul.dash>li:before {
     .content-header {
       padding:2rem 0;
         text-align:center;
+    }
+
+    .grid-2 {
+      display: grid;
+      @media screen and (min-width:$mid) {
+        grid-template-columns:repeat(2, minmax(0, 1fr));
+      }
+      gap: 1rem;
+    }
+
+    .services {
+      list-style-type:none;
+      padding:0;
+      margin:1rem 0;
+      
+      li {
+        font-size:1.2rem;
+        display:flex;
+        align-items:center;
+        padding:1rem;
+        background-color: mix($text-color, $page-color, 5%);
+        border-radius:4px;
+        svg {
+          width:6rem;
+          padding-right:1rem;
+        }
+
+      }
+
     }

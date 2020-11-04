@@ -7,7 +7,7 @@ layout: layouts/base.njk
   <p class="description">Hands-on, collaborative development for high converting, quality websites.</p>
 </section>
 
-<section class="">
+<section class="works">
 <article class="work-card">
   <a href="https://www.skinnykitchen.com/">
     <img src="/images/work/Skinny-Kitchen-Logo.png" alt="Skinnykitchen logo">
@@ -17,7 +17,7 @@ layout: layouts/base.njk
   <div class="work-info">
   <h3>Skinnykitchen</h3>
     <p>
-     Skinnykitchen is a healthy recipe blog run by Nancy Fox. I've built her a custom WordPress theme that can meet her needs, but also be flexible enough for changes. </p>
+     Skinnykitchen is a popular healthy recipe blog run by Nancy Fox averaging over 5,000 pageviews a day. I've built her a custom WordPress theme that can meet her needs, but also be flexible enough for changes. </p>
     <ul>
       <li>November 2020</li>
       <li><a href="https://www.skinnykitchen.com/">https://www.skinnykitchen.com/</a></li>
@@ -26,21 +26,22 @@ layout: layouts/base.njk
 </article>
 
 <article class="work-card">
+  <a href="https://atownpark.com/">
+    <img src="/images/work/atownpark-screenshot.png" alt="atown park screenshot">
+    <span>Visit Site</span>
+  </a>
+
   <div class="work-info">
   <h3>ATown Park</h3>
     <p>
       ATown Park is an indoor and outdoor skatepark and shop in Atascadero, CA.
-      I developed and designed a custom WordPress website.</p>
+      I developed and designed a custom WordPress theme for them and provided reservation functionality.</p>
     <ul>
       <li>January 2020</li>
       <li><a href="https://atownpark.com/">https://atownpark.com/</a></li>
     </ul>
   </div>
 
-  <a href="https://atownpark.com/">
-    <img src="/images/work/atownpark-screenshot.png" alt="atown park screenshot">
-    <span>Visit Site</span>
-  </a>
 
 </article>
 
@@ -51,7 +52,7 @@ layout: layouts/base.njk
   <div class="work-info">
   <h3>Grace Baptist Church Paso Robles</h3>
     <p>WordPress development for Grace Baptist Church in Paso Robles, CA. I designed a custom theme, organized the
-      content into pages and categories, and optimized SEO. Also designed their website logo.</p>
+      content into pages and categories, and optimized SEO. Additionally, I designed their website logo.</p>
     <ul>
       <li>May 2019</li>
       <li><a href="https://gracebaptistpaso.org/">https://gracebaptistpaso.org/</a></li>

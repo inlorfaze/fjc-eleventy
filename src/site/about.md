@@ -17,25 +17,19 @@ alt: Finley Chen portrait
 
 
 ## Services 
-I am a Front-End WordPress developer who has been making websites for small businesses for over 3 years. I have experience working with many types of individuals and organizations - churches, nonprofits, my university, online stores,  and more. Aside from WordPress, I also work end-to-end on full-stack web applications with strong front-end skills in JavaScript, PHP, and React with a focus on accessible and functional UI/UX. 
-
-
-Examples of services I provide:
-<ul class="dash">
-    <li>Designing and developing robust WordPress websites</li>
-    <li>Hosting and maintaining your website long-term</li>
-    <li>Business digital strategy & search engine marketing</li>
-    <li>Developing a WooCommerce or Shopify store</li>
-    <li>Developing custom features and plugins</li>
-    <li>Developing a robust, performant <a href="https://jamstack.org/">Jamstack</a> site with headless WordPress</li>
+<ul class="services grid-2">
+    <li>{{ '/src/site/images/icons/website.svg' | svgContents | safe }}Designing and developing robust websites</li>
+    <li>{{ '/src/site/images/icons/hosting.svg' | svgContents | safe }}Hosting and maintaining your website long-term</li>
+    <li>{{ '/src/site/images/icons/marketing.svg' | svgContents | safe }}Business digital strategy & search engine optimization</li>
+    <li>{{ '/src/site/images/icons/ecommerce.svg' | svgContents | safe }}Optimized for WooCommerce or Shopify</li>
 </ul>
-
-I won't use bloated, insecure plugins or one-size-fits-all, cookie-cutter themes. 
 
 <div class="divider"></div>
 
-
 ## Experience 
+
+<div class="grid-2">
+<div>
 
 2017 - *Present*  
 **Freelance Web Developer**  
@@ -44,7 +38,7 @@ Jun 2019 – Dec 2019
 **Frontend Web Developer at [AllPeople](https://allpeople.co/)**  
 
 Jan 2019 – Aug 2019  
-**Student Front End Developer at [California Polytechnic State University-San Luis Obispo](https://afd.calpoly.edu)**  
+**Student Front End Developer at [Cal Poly SLO](https://afd.calpoly.edu)**  
 
 May 2018 – Aug 2019  
 **WordPress Web Developer & DevOps at [Colony Media](https://13starsmedia.com/)**  
@@ -52,11 +46,18 @@ May 2018 – Aug 2019
 Apr 2017 – Sep 2018  
 **Web Developer at [Canterbury Gardens & Gifts](https://yourchristmasstore.com)**  
 
+
+</div>
+<p>
+I am a Front-End WordPress developer who has been making websites for small businesses for over 3 years. I have experience working with many types of individuals and organizations - churches, nonprofits, my university, online stores,  and more. Aside from WordPress, I also work end-to-end on full-stack web applications with strong front-end skills in JavaScript, PHP, and React with a focus on accessible and functional UI/UX. 
+</p>
+</div>
+
 <div class="divider"></div>
 
 
-## Technologies & Tools
-There's always new ways to speed up the development and design process by utilizing the right tools when you need them.
+## Tools I use
+
 <ul class="dash">
     <li>Platforms: WordPress, WooCommerce, Shopify, Laravel</li>
     <li>Front end: React, Gatsby, jQuery, Bootstrap, Sass, PHP</li>
@@ -64,6 +65,8 @@ There's always new ways to speed up the development and design process by utiliz
     <li>DevOps and Build Tools: Nginx, Docker, npm, gulp, Yarn, Composer, Git</li>
     <li>Photo/Graphics: Adobe Photoshop, Illustrator, XD</li>
 </ul>
+
+<div class="divider"></div>
 
 ## Etc
 
